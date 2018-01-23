@@ -15,6 +15,7 @@ public class UserController {
     @Resource
     private UserService userService;
 
+    //登录功能
     @RequestMapping("/account/login")
     public Response login(String username, String password){
         return userService.login(username,password);
